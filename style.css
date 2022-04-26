@@ -1,0 +1,132 @@
+/* Author Group Details for Journals */
+div.contrib-group {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 11pt;
+  line-height: 22pt;
+  text-align: left;
+  margin: 10pt 0;
+  letter-spacing: -0.18pt;
+  display: inline;
+}
+
+div.contrib-group .contrib {
+  font-style: normal;
+  font-weight: bold;
+  display: inline;
+}
+
+div.contrib-group .name {
+  display: inline;
+}
+/* ? For New Group */
+.contrib[data-new] > div > span.given-names {
+  padding-right: 0.25em;
+}
+
+div.book-part-meta > div.title-group > div.subtitle {
+  font-size: 17pt;
+  line-height: 25px;
+  color: maroon;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+/* Added color For Author Names,degrees, suffix, prefix  */
+.contrib [data-name='given-names'] {
+  color: #ee1d23;
+  /* color: #6300A4; */
+}
+
+.contrib [data-name='surname'] {
+  /* color: #0FAD00; */
+  color: #3b499a;
+}
+
+.contrib [data-name='prefix'] {
+  color: #f68a35;
+}
+
+.contrib [data-name='suffix'] {
+  color: #f68a33;
+}
+
+.contrib [data-name='degrees'] {
+  color: #f68a33;
+}
+a.xref:hover {
+  cursor: pointer !important;
+}
+
+/* Author Name xref Details */
+a.xref[data-role='aff'] > sup,
+a.xref[data-role='aff'] > .sup {
+  color: #0645ad;
+  font-size: 12px;
+}
+
+.highlightAff {
+  background: yellow;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+
+/* Ancor Tag Background Color None */
+.contrib > a.xref {
+  /* vertical-align: super; */
+  /* background-color: none !important; */
+  cursor: pointer !important;
+  color: blue;
+}
+
+/* For Label Details */
+.contrib-group .pistart::after,
+.abstract .pistart::after {
+  content: attr(data-pistart);
+  /* vertical-align:bottom!important;   */
+}
+
+.contrib:last-of-type,
+[data-name='contrib']:last-of-type {
+  background-color: aqua;
+}
+
+.contrib .pistart:last-of-type {
+  vertical-align: bottom !important;
+  background-color: aqua;
+}
+/* For Superscript */
+.contrib a.xref + span.pistart {
+  vertical-align: super;
+}
+.contrib span[data-pistart=' and '] {
+  vertical-align: bottom !important;
+}
+
+.contrib[contrib-id]::after {
+  content: '\f002';
+}
+
+/* Affiliation Details */
+.aff {
+  line-height: 16pt;
+  font-size: 14px;
+  margin-top: 5pt;
+  text-indent: 0;
+}
+
+.aff::before {
+  content: attr(data-label);
+  position: relative !important;
+  display: inline !important;
+  visibility: visible;
+  vertical-align: super;
+}
+
+div p:last-of-type {
+  background: #ff0000;
+}
