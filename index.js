@@ -21,3 +21,9 @@ var Obj = {
 
 console.log(Obj.coll);
 console.log(Obj.last_lab());
+
+
+
+function label_Symbol(){
+  
+}
